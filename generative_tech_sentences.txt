@@ -1,0 +1,25 @@
+=== Kode Program ===
+import random
+
+subjects = ["komputer", "internet", "robot", "sensor", "blockchain", "augmented reality", "kecerdasan buatan"]
+predicates = ["menghubungkan", "mengatur", "mengendalikan", "mendeteksi", "memudahkan", "memastikan", "membantu", "mengembangkan"]
+objects = ["jaringan", "pengguna", "data", "perangkat", "lingkungan", "sistem", "produksi", "komunikasi"]
+keterangan = ["dengan cepat", "secara otomatis", "tanpa kabel", "di masa depan", "secara real-time", "dalam industri", "melalui internet", "untuk efisiensi"]
+
+def buat_kalimat():
+    subjek = random.choice(subjects)
+    predikat = random.choice(predicates)
+    objek = random.choice(objects)
+    keter = random.choice(keterangan)
+    return f"{subjek.capitalize()} {predikat} {objek} {keter}."
+
+for i in range(5):
+    print(f"{i+1}. {buat_kalimat()}")
+
+
+=== Hasil Output ===
+1. Blockchain membantu pengguna dengan cepat.
+2. Robot memastikan pengguna untuk efisiensi.
+3. Komputer memastikan perangkat secara real-time.
+4. Komputer membantu pengguna untuk efisiensi.
+5. Internet menghubungkan produksi untuk efisiensi.
